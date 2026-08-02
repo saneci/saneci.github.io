@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #0a2a4a;
+    color: #ffffff;
+    padding: 60px 0 40px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+header .title {
+    font-size: 1.4rem;
+    color: #40d0d0;
+    margin-top: 8px;
+    font-weight: 300;
+}
+
+section {
+    padding: 50px 0;
+    border-bottom: 1px solid #eaeef2;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #0a2a4a;
+    margin-bottom: 24px;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #40d0d0;
+    margin-top: 6px;
+    border-radius: 2px;
+}
+
+#about p {
+    font-size: 1.15rem;
+    max-width: 720px;
+    color: #2d3a45;
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    background-color: #eef6fa;
+    color: #0a2a4a;
+    padding: 8px 18px;
+    border-radius: 24px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+#skills li::before {
+    content: '{ ';
+    color: #d45a2a;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.job {
+    margin-bottom: 32px;
+}
+
+.job h3 {
+    font-size: 1.3rem;
+    color: #0a2a4a;
+}
+
+.job .period {
+    color: #d45a2a;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.job .position {
+    font-weight: 600;
+    color: #1d4a6a;
+    margin: 2px 0 8px;
+}
+
+.job p:last-of-type {
+    color: #2d3a45;
+}
+
+#education p {
+    font-size: 1.05rem;
+    color: #2d3a45;
+}
+
+.courses {
+    list-style: none;
+    padding: 0;
+    margin-top: 12px;
+}
+
+.courses li {
+    padding: 6px 0;
+    color: #2d3a45;
+    border-bottom: 1px solid #f0f4f8;
+}
+
+.courses li:last-child {
+    border-bottom: none;
+}
+
+.courses li::before {
+    content: '▹ ';
+    color: #40d0d0;
+}
+
+#contacts a {
+    color: #0a2a4a;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 2px solid #40d0d0;
+    transition: color 0.2s;
+}
+
+#contacts a:hover {
+    color: #d45a2a;
+    border-bottom-color: #d45a2a;
+}
+
+#contacts p {
+    margin: 6px 0;
+}
+
+footer {
+    background-color: #0a2a4a;
+    color: #a0b8cc;
+    text-align: center;
+    padding: 24px 0;
+    font-size: 0.9rem;
+}
+
+footer .container p {
+    margin: 0;
+}
