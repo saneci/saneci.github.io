@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Александр Гладской — Software Engineer</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Александр Гладской</h1>
+        <p class="title">Software Engineer</p>
+        <a href="index.html" class="lang-switch">EN</a>
+    </div>
+</header>
+
+<section id="about">
+    <div class="container">
+        <h2>Обо мне</h2>
+        <p>Software Engineer с более чем 10-летним коммерческим опытом, специализируюсь на высоконагруженных системах
+            для финансового сектора. Имею подтверждённый опыт проектирования, реализации и оптимизации микросервисов,
+            обрабатывающих тысячи транзакций ежедневно. Эксперт в экосистеме Spring, интеграциях через Kafka и REST
+            API, а также в оптимизации производительности баз данных PostgreSQL. Активно продвигаю чистый код,
+            автоматизацию тестирования (JUnit, Testcontainers) и практики CI/CD (GitLab, TeamCity, Docker, OpenShift).
+            Увлечён решением сложных задач, повышением надёжности систем и внедрением современных инженерных практик.
+            Открыт к удалённой или гибридной работе, готов к релокации. Буду рад <a href="#contacts">связаться через
+                раздел контактов</a>.</p>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="container">
+        <h2>Ключевые навыки</h2>
+        <ul>
+            <li>Java 8 / 11 / 17 / 21</li>
+            <li>Lombok</li>
+            <li>Spring Framework Boot / Data JPA / Security / MVC / Events</li>
+            <li>Micrometer / Prometheus / Caffeine</li>
+            <li>Hexagonal Architecture / Event-Driven Architecture / DDD</li>
+            <li>JPA / Hibernate / PostgreSQL / SQL / Liquibase</li>
+            <li>Apache Kafka / REST API</li>
+            <li>Docker / OpenShift / Kubernetes</li>
+            <li>Git / GitLab / TeamCity</li>
+            <li>JUnit 5 / Mockito / Wiremock / Testcontainers</li>
+            <li>JaCoCo / SonarQube</li>
+            <li>Gradle (Kotlin DSL) / OpenAPI / Protobuf</li>
+            <li>Jira / Confluence / Agile / Scrum</li>
+        </ul>
+    </div>
+</section>
+
+<section id="experience">
+    <div class="container">
+        <h2>Опыт работы</h2>
+
+        <div class="job">
+            <h3>EGAR (проект Сбера)</h3>
+            <p class="period">Март 2026 — настоящее время</p>
+            <p class="position">Ведущий Java-разработчик</p>
+            <ul>
+                <li>Спроектировал архитектуру распределённой системы на Java 21: 2 микросервиса + модульный монолит,
+                    взаимодействие через REST и Kafka, OpenAPI-спецификации.
+                </li>
+                <li>Разработал микросервис сверки метаданных API (API Discovery &lt;-&gt; API Repository), устранил
+                    ручной аудит и снизил риск рассинхронизации контрактов.
+                </li>
+                <li>Разработал BFF-микросервис: агрегация данных из REST, PostgreSQL и других сервисов.</li>
+                <li>Настроил observability: Micrometer + Prometheus, каунтеры и регистрация метрик — команда получила
+                    видимость состояния сервисов в проде.
+                </li>
+                <li>Применял в разработке Hexagonal Architecture, DDD, Spring Events, Anti-Corruption Layer, Eventual
+                    Consistency, Transactional Outbox.
+                </li>
+                <li>Настраивал кэширование (Caffeine) и retry-политики для внешних вызовов, снизил нагрузку на
+                    downstream и повысил устойчивость к сбоям.
+                </li>
+                <li>Настраивал сборку на Gradle (Kotlin DSL): кодогенерация DTO из OpenAPI и Protobuf-схем, разрешение
+                    конфликтов транзитивных зависимостей.
+                </li>
+                <li>Поднял покрытие бизнес-логики с 0% до ~43% (JUnit 5, Mockito, Wiremock, Feign).</li>
+                <li>Внедрил SonarQube и JaCoCo как стандарт качества команды.</li>
+                <li>Онбордил 4 человек, вёл ретро, синки и технические брейнштормы.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Газпромбанк</h3>
+            <p class="period">Июль 2024 — Январь 2026</p>
+            <p class="position">Java-разработчик</p>
+            <ul>
+                <li>Разрабатывал и поддерживал бизнес-логику сервисов потребительского кредитования (Розничный
+                    кредитный конвейер и Омниканальная платформа) на Java 11/17 (Spring Framework), которые
+                    обрабатывают тысячи заявок ежедневно.
+                </li>
+                <li>Разрабатывал и поддерживал интеграции с внешними системами через Apache Kafka (Camunda) и REST
+                    API.
+                </li>
+                <li>Покрывал код юнит- и интеграционными тестами (JUnit 5, Mockito, Testcontainers).</li>
+                <li>Разрабатывал и оптимизировал SQL-запросы, работал с PostgreSQL, управлял миграциями БД с помощью
+                    Liquibase.
+                </li>
+                <li>Рефакторил и оптимизировал legacy-код для улучшения читаемости и производительности, проводил
+                    код-ревью.
+                </li>
+                <li>Исправлял выявленные дефекты.</li>
+                <li>Работал в рамках налаженного CI/CD-процесса: сборка и деплой через TeamCity, контейнеризация
+                    Docker, развёртывание в OpenShift.
+                </li>
+                <li>Мониторил логи и метрики в Kibana.</li>
+                <li>Работал в Agile-команде по Scrum (дейли, планирование, груминг, ретроспективы).</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>СберМаркет</h3>
+            <p class="period">Ноябрь 2022 — Июль 2023</p>
+            <p class="position">Старший инженер</p>
+            <ul>
+                <li>Разрабатывал Java-утилиты для интеграционного тестирования (REST API, Kafka, Database), которые
+                    ускорили подготовку тестовых данных и снизили ручную работу.
+                </li>
+                <li>Разрабатывал автоматизированные тесты на Java и Golang.</li>
+                <li>Настраивал GitLab-пайплайны для выполнения автотестов.</li>
+                <li>Проводил ревью спецификаций OpenAPI/Swagger.</li>
+                <li>Проводил тестирование PaaS-микросервисов.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Т-Банк</h3>
+            <p class="period">Март 2019 — Октябрь 2022</p>
+            <p class="position">Старший инженер</p>
+            <ul>
+                <li>Разрабатывал Java-утилиты и библиотеки для интеграционного тестирования (REST API, Kafka,
+                    Database).
+                </li>
+                <li>Разрабатывал автоматизированные тесты на Java и Spring Framework.</li>
+                <li>Настраивал GitLab-пайплайны для выполнения автотестов.</li>
+                <li>Проводил ревью спецификаций OpenAPI/Swagger.</li>
+                <li>Проводил тестирование микросервисов.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>Ростелеком</h3>
+            <p class="period">Июль 2018 — Январь 2019</p>
+            <p class="position">Инженер по тестированию ПО</p>
+            <ul>
+                <li>Проводил функциональное, интеграционное и регрессионное тестирование CRM-системы.</li>
+                <li>Участвовал в Scrum-мероприятиях (дейли, планирование, ретроспективы).</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="education">
+    <div class="container">
+        <h2>Образование</h2>
+        <p><strong>Российский государственный социальный университет, Москва</strong> — Информационные системы и
+            технологии (бакалавр), 2019</p>
+
+        <h3 style="margin-top: 24px; font-size: 1.2rem; color: #0a2a4a;">Курсы и сертификаты</h3>
+        <ul class="courses">
+            <li>Spring — Full Course. Boot, Hibernate, Security, REST — SwiftBook (2024)</li>
+            <li>GPB IT FACTORY 2024 — Backend Developer (Java/Kotlin) — Газпромбанк (2024)</li>
+            <li>Advanced Java Course — SwiftBook (2023)</li>
+            <li>Programming in C — Учебный центр при МГТУ им. Баумана (2016)</li>
+            <li>English for IT Specialists — Учебный центр при МГТУ им. Баумана (2016)</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contacts">
+    <div class="container">
+        <h2>Контакты</h2>
+        <p>Email: <a href="mailto:a.gladskoy@gmail.com">a.gladskoy@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/saneci">github.com/saneci</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/saneci">linkedin.com/in/saneci</a></p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; <span id="year"></span> Александр Гладской</p>
+    </div>
+</footer>
+
+<button id="scrollTopBtn" aria-label="Наверх">&#8679;</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>

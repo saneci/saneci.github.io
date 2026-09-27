@@ -37,6 +37,29 @@ header .title {
     font-weight: 300;
 }
 
+header .container {
+    position: relative;
+}
+
+.lang-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #40d0d0;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid #40d0d0;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.lang-switch:hover {
+    background-color: #40d0d0;
+    color: #0a2a4a;
+}
+
 section {
     padding: 50px 0;
     border-bottom: 1px solid #eaeef2;
