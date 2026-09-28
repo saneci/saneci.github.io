@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://saneci.github.io/sitemap.xml
