@@ -167,25 +167,33 @@ h2::after {
 #skills ul {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     gap: 8px;
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 #skills li {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
     background-color: var(--color-bg-soft);
     color: var(--color-navy);
     padding: 8px 18px;
     border-radius: var(--radius-md);
     font-size: 0.95rem;
     font-weight: 500;
+    line-height: 1.2;
 }
 
 #skills li::before {
-    content: '{ ';
+    content: '{';
     color: var(--color-orange);
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.2em;
+    line-height: 1;
+    transform: translateY(-1px);
 }
 
 /* --- Job / Experience --------------------------------------------------- */
@@ -211,22 +219,9 @@ h2::after {
     margin: 2px 0 8px;
 }
 
-.job ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 8px;
-}
-
-.job ul li {
-    padding: 4px 0;
+.job p {
+    font-size: 1.05rem;
     color: var(--color-text);
-}
-
-/* Общий маркер для списков job и courses */
-.job ul li::before,
-.courses li::before {
-    content: '▹ ';
-    color: var(--color-teal);
 }
 
 /* --- Courses ------------------------------------------------------------ */
@@ -245,6 +240,11 @@ h2::after {
 
 .courses li:last-child {
     border-bottom: none;
+}
+
+.courses li::before {
+    content: '▹ ';
+    color: var(--color-teal);
 }
 
 /* --- Links -------------------------------------------------------------- */
@@ -275,39 +275,43 @@ h2::after {
     bottom: 10%;
     width: 48px;
     height: 48px;
+    padding: 0;
     border: none;
     border-radius: 50%;
     background-color: var(--color-navy-light);
-    color: var(--color-bg);
-    font-size: 1.4rem;
-    line-height: 1;
     cursor: pointer;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 12px rgba(10, 42, 74, 0.15);
-    transition: background-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+    transition: opacity var(--transition-fast),
+    visibility var(--transition-fast),
+    background-color var(--transition-fast),
+    transform var(--transition-fast);
     z-index: 1000;
 }
 
 #scrollTopBtn.visible {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
 }
 
 #scrollTopBtn::before {
     content: '';
     display: block;
-    width: 15px;
-    height: 15px;
+    width: 14px;
+    height: 14px;
     border-top: 2px solid var(--color-teal);
     border-left: 2px solid var(--color-teal);
     transform: rotate(45deg);
-    margin-top: 6px;
+    margin-top: 4px;
+    transition: border-color var(--transition-fast);
 }
 
 #scrollTopBtn:hover {
     background-color: var(--color-teal);
-    color: var(--color-navy);
     transform: translateY(-2px);
 }
 
@@ -325,7 +329,6 @@ h2::after {
 @media (hover: none) {
     #scrollTopBtn:hover {
         background-color: var(--color-navy-light);
-        color: var(--color-teal);
         transform: none;
     }
 
@@ -334,6 +337,7 @@ h2::after {
         border-left-color: var(--color-teal);
     }
 }
+
 
 /* --- Small screens ------------------------------------------------------ */
 
@@ -376,9 +380,18 @@ h2::after {
         font-size: 1rem;
     }
 
+    #skills ul {
+        gap: 6px;
+    }
+
     #skills li {
         padding: 5px 12px;
         font-size: 0.8rem;
+        gap: 2px;
+    }
+
+    #skills li::before {
+        font-size: 1.2em;
     }
 
     .job h3 {
@@ -415,5 +428,10 @@ h2::after {
         height: 40px;
         right: 16px;
         bottom: 16px;
+    }
+
+    #scrollTopBtn::before {
+        width: 12px;
+        height: 12px;
     }
 }
