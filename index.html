@@ -46,7 +46,7 @@
         <h2>Key Skills</h2>
         <ul>
             <li>Java 8 / 11 / 17 / 21</li>
-            <li>Lombok</li>
+            <li>Lombok / MapStruct</li>
             <li>Spring Framework Boot / Data JPA / Security / MVC / Events</li>
             <li>Micrometer / Prometheus / Caffeine</li>
             <li>Hexagonal Architecture / Event-Driven Architecture / DDD</li>
@@ -70,11 +70,12 @@
             <h3>EGAR (Sber project)</h3>
             <p class="period">March 2026 — Present</p>
             <p class="position">Lead Java Developer</p>
-            <p>Designed a distributed system architecture (2 microservices + modular monolith) with REST and Kafka.
-                Built an API metadata reconciliation microservice that automated manual audit and eliminated contract
-                desynchronization. Developed a BFF service aggregating data from REST, PostgreSQL, and other services.
-                Set up observability (Micrometer, Prometheus), caching (Caffeine), and the build on Gradle (Kotlin DSL).
-                Mentored 4 team members and introduced code quality standards (SonarQube, JaCoCo).</p>
+            <p>Designed a distributed system architecture (2 microservices, a modular monolith, and integrations with
+                external services) with REST and Kafka. Led the development of an API metadata reconciliation
+                microservice that automated manual audit and eliminated API contract desynchronization. Developed a BFF
+                service aggregating data from other services (REST) and the database (PostgreSQL), set up observability
+                (Micrometer, Prometheus) and caching (Caffeine), and configured service builds on Gradle (Kotlin DSL).
+                Assisted with onboarding 4 team members and introduced code quality standards (SonarQube, JaCoCo).</p>
         </div>
 
         <div class="job">
@@ -83,8 +84,8 @@
             <p class="position">Java Developer</p>
             <p>Developed and maintained business logic for consumer lending services (Retail Lending Pipeline,
                 Omnichannel Platform) handling thousands of applications daily. Built integrations with external systems
-                via Kafka and REST. Optimized SQL queries and managed DB migrations with Liquibase. Refactored legacy
-                code, conducted code reviews, and worked within an established CI/CD process (TeamCity, Docker,
+                via Kafka, Camunda and REST. Optimized SQL queries and managed DB migrations with Liquibase. Refactored
+                legacy code, conducted code reviews, and worked within an established CI/CD process (TeamCity, Docker,
                 OpenShift).</p>
         </div>
 
@@ -92,9 +93,10 @@
             <h3>SberMarket</h3>
             <p class="period">November 2022 — July 2023</p>
             <p class="position">Senior Engineer</p>
-            <p>Developed Java utilities for integration testing (REST API, Kafka, Database) that accelerated test data
-                preparation. Wrote automated tests in Java and Golang, built GitLab pipelines, and reviewed
-                OpenAPI/Swagger specifications for PaaS microservices.</p>
+            <p>Contributed to integration testing tooling (REST API, Kafka, Database) that accelerated test data
+                preparation. The tooling was also designed for integration with test management systems (TMS) — a
+                complex feature built in Go. Reviewed OpenAPI/Swagger specifications for PaaS microservices. Wrote
+                automated tests in Java and Golang, and built GitLab pipelines.</p>
         </div>
 
         <div class="job">
@@ -102,7 +104,7 @@
             <p class="period">March 2019 — October 2022</p>
             <p class="position">Senior Engineer</p>
             <p>Developed Java utilities and libraries for integration testing (REST API, Kafka, Database). Wrote
-                automated tests in Java and Spring, built GitLab pipelines, and reviewed OpenAPI/Swagger specifications
+                automated tests in Java (Spring), built GitLab pipelines, and reviewed OpenAPI/Swagger specifications
                 for microservices.</p>
         </div>
 
@@ -110,7 +112,7 @@
             <h3>Rostelecom</h3>
             <p class="period">July 2018 — January 2019</p>
             <p class="position">Software Testing Engineer</p>
-            <p>Performed functional, integration, and regression testing of a CRM system. Participated in Scrum
+            <p>Ran functional, integration, and regression testing of a CRM system. Participated in Scrum
                 ceremonies (daily stand-ups, planning, retrospectives).</p>
         </div>
     </div>
